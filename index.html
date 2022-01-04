@@ -16,8 +16,9 @@
   </head>
 
   <body>
-<div class="wrapper">
-    <header class="container burger-class">
+
+    <header class="container burger-class ">
+    <div class="wrapper mobile-out-767">
       <input type="checkbox" id="burger" />
       <label for="burger"></label>
       <nav class="header-nav">
@@ -27,9 +28,34 @@
           <li class="head-li"><a class="link" href="#">КОНТАКТИ</a></li>
         </ul>
       </nav>
+       </div>
+   
+   
+
+    <div class="mobile-burger">
+      <div class="wrapper2">
+  
+        <input type="checkbox" id="check-menu">
+        <label  class="header-label" for="check-menu">МЕНЮ</label>
+
+          <div class="burger-line first"></div>
+          <div class="burger-line second"></div>
+          <div class="burger-line third"></div>
+          <div class="burger-line fourth"></div>
+
+          <nav class="main-menu">
+            <a class="header-a" href="#">ГОЛОВНА</a>
+            <a class="header-a" href="#">ГАЛЕРЕЯ</a>
+            <a class="header-a" href="#">КОНТАКТИ</a>
+          </nav>
+        
+      </div>
+     </div>
     </header>
 
     <main >
+
+      <div class="wrapper"> 
       <section class="container">
         <div class="subj-shot-page">
           <div class="subject-shot-alltext">
@@ -167,7 +193,7 @@
       </section>
 
       <section class="we-do-deteil container">
-        <div class="we-do-real-descr">
+        <div class="we-do-real-descr media-425">
           <h2 class="number-text">03</h2>
           <div class="we-do-descr we-do--desc3">
             <h2 class="main-text">МИ ЗРОБИМО ДЕТАЛІЗОВАНО.</h2>
@@ -200,18 +226,18 @@
           </div>
         </div>
       </section>
-</div>
+      </div>
 
       <section class="container add--for-cont">
-        <div class="section-success">
+        <div class="section-success ">
            <div class="photo-70-text">
              <h2 class="h1-text  add--for-h1text">ФОТО - 70% УСПІХУ ТВОГО ПРОДУКТУ</h2>
-              <h3 class="h3-text h3line-hieght">
+              <p class="h3-text h3line-hieght">
               Під час вибору товару в інтернет-магазині, натисканні кнопки
               «Купити» спрацьовують наші емоціїї. За виклик того самого бажання
               вкупі з емоціями відповідають фотографії з візуалізацією, які
               використовуються брендом.
-            </h3>
+              </p>
         </div>
 
         <div class="photo-70-photos">
@@ -236,22 +262,22 @@
         </div>
 
         <div class="circle-button margintp70">
-              <button class="circle ">
+              <button class="circle circle-mobile ">
                 <span class="circle-text">ГАЛЕРЕЯ</span>
               </button>
             </div>
       </section>
 
-<div class="wrapper"> 
+      <div class="wrapper"> 
       <section class="seaction-gelery container">
         <div class="gelery-text-cont">
-          <h2 class="h1-text">ГАЛЕРЕЯ</h2>
+          <h2 class="h1-text h1-text-modificator">ГАЛЕРЕЯ</h2>
           <h3 class="h3-text can-see-text">
             Тут ти можеш подивитись усі наші роботи :)
           </h3>
 
           <div class="circle-button margintp70">
-            <button class="circle  mobile-out">
+            <button class="circle  mobile-out button-move ">
               <span class="circle-text btn-text">УСІ РОБОТИ</span>
             </button>
           </div>
@@ -311,9 +337,8 @@
         </div>
         </div>
 
-        <!-- asdasdasd -->
   <div class="circle-button margintp70">
-            <button class="circle mobile-in">
+            <button class="circle mobile-in button-move">
               <span class="circle-text btn-text">УСІ РОБОТИ</span>
             </button>
           </div>
@@ -344,16 +369,18 @@
             </div>
 
             <div class="circle-button margintp70">
-              <button class="circle">
+              <button class="circle button-move2">
                 <span class="circle-text finish-btn-mrg">НАДІСЛАТИ</span>
               </button>
             </div>
           </form>
         </div>
       </section>
-    </main>
-</div>
+      </div>
+   </main>
+
     <footer>
+      <div class="wrapper"> 
       <div class="container display">
         <div class="footer-meny">
           <ul class="footer-ul">
@@ -370,53 +397,29 @@
         </div>
 
         <div class="footer-img display">
-          <div>
-            <a
-              class="footer-midly-img"
-              target="_blank"
-              href=" https://twitter.com/?lang=uk"
-            >
-              <img
-                decoding="async"
-                loading="lazy"
-                src="./photo/twitter (2) 2.svg"
-                alt=""
-                srcset=""
-            /></a>
-          </div>
 
-          <div>
-            <a
-              class="footer-midly-img"
-              target="_blank"
-              href="https://uk-ua.facebook.com/"
-            >
-              <img
-                decoding="async"
-                loading="lazy"
-                src="./photo/facebook.svg"
-                alt=""
-                srcset=""
-            /></a>
-          </div>
+          <ul class="footer-img-ul">
 
-          <div>
-            <a
-              class="footer-midly-img"
-              target="_blank"
-              href="https://www.instagram.com/"
-            >
-              <img
-                decoding="async"
-                loading="lazy"
-                src="./photo/instagram.svg"
-                alt=""
-                srcset=""
-            /></a>
-          </div>
+         <li class="footer-midly-img">
+            <a target="_blank" href=" https://twitter.com/?lang=uk" >
+              <img class="footer-img-size" src="./photo/twitter (2) 2.svg"alt="" srcset=""/></a>
+          </li>
+
+          <li class="footer-midly-img">
+            <a target="_blank" href="https://uk-ua.facebook.com/" >
+              <img class="footer-img-size" src="./photo/facebook.svg" alt=""srcset=""/></a>
+          </li>
+
+          <li class="footer-midly-img">
+            <a target="_blank" href="https://www.instagram.com/">
+              <img  class="footer-img-size" src="./photo/instagram.svg"alt="" srcset=""/></a>
+          </li>
+
+          </ul>
+
         </div>
       </div>
     </footer>
-    </div>
+
   </body>
 </html>
