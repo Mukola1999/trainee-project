@@ -12,7 +12,7 @@ html {
 }
 body {
   font-size: 15px;
-  line-height: 1;
+  line-height: 1.2;
   color: #666;
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
@@ -55,13 +55,15 @@ label.header-label {
   height: 100%;
   cursor: pointer;
   z-index: 5;
-  line-height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .burger-line {
   position: absolute;
-  top: 8px;
-  right: 10px;
+  top: 14px;
+  right: 25px;
   width: 35px;
   height: 2px;
   background-color: #fff;
@@ -70,11 +72,11 @@ label.header-label {
 
 .second,
 .third {
-  top: 18px;
+  top: 24px;
 }
 
 .fourth {
-  top: 28px;
+  top: 34px;
 }
 
 .main-menu {
@@ -100,6 +102,12 @@ label.header-label {
   background-color: tomato;
   z-index: 5;
 }
+
+.header-a:hover {
+  background-color: red;
+  transition: 0.5s all;
+}
+
 #check-menu:checked ~ .main-menu {
   max-height: 500px;
   font-size: 16px;
@@ -126,7 +134,7 @@ label.header-label {
 
 .mobile-burger {
   background-color: rgba(70, 177, 201, 1);
-  height: 40px;
+  height: 50px;
   position: fixed;
   max-width: 100%;
   width: 100%;
@@ -139,19 +147,22 @@ label.header-label {
 /* burgerrrrrrrrrrrrrrrrrrrrrr */
 button.circle span::after {
   content: "";
-  display: inline-block;
+  position: absolute;
+  right: -45px;
   width: 41px;
   height: 5px;
   background-image: url("../photo/arrow.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  transition: all 0.4s ease-in-out;
 }
 
 .two-circles {
   position: relative;
   margin: auto;
   display: flex;
+  padding: 0 10px;
 }
 
 .margintp70 {
@@ -173,16 +184,8 @@ button.circle span::after {
 .circle-text {
   transition-duration: 0.8s;
 }
-.circle:hover .circle-text {
-  right: -150px;
-}
-
-.button-move:hover .circle-text {
-  right: -190px;
-}
-
-.button-move2:hover .circle-text {
-  right: -180px;
+.circle:hover .circle-text::after {
+  right: -90px;
 }
 
 .circle:hover .arrow-left {
@@ -213,13 +216,13 @@ button.circle span::after {
   position: absolute;
   font-size: 24px;
   top: 48px;
-  right: -83px;
+  right: -40px;
   display: flex;
   align-items: center;
 }
 
 .btn-text {
-  right: -109px;
+  right: -50px;
 }
 
 .arow {
@@ -264,8 +267,8 @@ button.circle span::after {
 }
 
 .subject-shot-text {
-  margin-top: 118px;
-  width: 410px;
+  margin-top: 100px;
+  width: 100%;
 }
 
 .h1-text {
@@ -446,7 +449,7 @@ button.circle span::after {
 
 .add--for-cont {
   margin-top: 175px;
-  padding-left: 25px;
+  /* padding-left: 25px; */
 }
 
 .add--for-h1text {
@@ -477,6 +480,7 @@ button.circle span::after {
   height: 100%;
   width: 90%;
   background-color: rgba(70, 177, 201, 0.25);
+  z-index: -2;
 }
 
 .photo-70-text {
@@ -487,9 +491,8 @@ button.circle span::after {
 }
 
 .h3line-hieght {
-  line-height: 35px;
   width: 100%;
-  max-width: 70%;
+  max-width: 100%;
 }
 
 .photo-70-photos {
@@ -625,7 +628,7 @@ button.circle span::after {
 }
 
 .finish-btn-mrg {
-  right: -102px;
+  right: -45px;
 }
 
 .footer-meny {
@@ -697,11 +700,19 @@ button.circle span::after {
   }
 
   .h1-text {
-    font-size: 60px;
+    font-size: 55px;
+  }
+
+  .h3-text {
+    margin-top: 10px;
+  }
+
+  .subject-shot-descr {
+    margin-top: 0px;
   }
 
   .we-do--desc1 {
-    max-width: 460px;
+    max-width: 100%;
     width: 100%;
   }
 
@@ -716,7 +727,7 @@ button.circle span::after {
   }
 
   .we-do-real-descr {
-    margin-top: 90px;
+    margin-top: 45px;
   }
 
   .page-one-photo1 {
@@ -752,7 +763,7 @@ button.circle span::after {
   }
 
   .gelery-text-cont {
-    margin-top: 170px;
+    margin-top: 100px;
   }
 
   #form input,
@@ -781,28 +792,16 @@ button.circle span::after {
   }
 
   .photoparat-blue {
-    top: 15px;
+    left: 25%;
   }
 
   .photoparat-pink {
     width: 95%;
-    left: -20px;
+    left: 20%;
   }
   .photoparat-grey {
-    bottom: -70px;
-    left: -20px;
-  }
-
-  .circle:hover .circle-text {
-    right: -150px;
-  }
-
-  .button-move:hover .circle-text {
-    right: -190px;
-  }
-
-  .button-move2:hover .circle-text {
-    right: -180px;
+    bottom: -30%;
+    left: 15%;
   }
 
   .circle:hover .arrow-left {
@@ -811,6 +810,67 @@ button.circle span::after {
 
   .circle:hover .arrow-right {
     right: -90px;
+  }
+
+  .header-ul {
+    margin: 40px 0;
+  }
+
+  .margintp70 {
+    margin-top: 25px;
+    margin-left: 0px;
+  }
+
+  .wuy-wee-text {
+    margin-bottom: 0px;
+  }
+
+  .main-text {
+    margin-top: 30px;
+  }
+
+  .we-do-right-part {
+    margin-top: -30px;
+  }
+
+  .we-do-real-photos {
+    margin-top: 5px;
+  }
+
+  .we-do-deteil {
+    margin-top: 40px;
+  }
+
+  .we-do-deteil-photos {
+    margin-top: 5px;
+  }
+
+  .add--for-cont {
+    margin-top: 160px;
+  }
+
+  .section-success::before {
+    top: -5px;
+  }
+
+  .seaction-gelery {
+    margin-top: 80px;
+  }
+
+  .seactions-2btn {
+    margin-top: 25px;
+  }
+
+  .seaction-contact {
+    margin-top: 55px;
+  }
+
+  .footer-ul {
+    margin-top: 80px;
+  }
+
+  .footer-img {
+    margin-top: 80px;
   }
 }
 
@@ -1009,18 +1069,6 @@ button.circle span::after {
     top: 40px;
   }
 
-  .circle:hover .circle-text {
-    right: -135px;
-  }
-
-  .button-move:hover .circle-text {
-    right: -165px;
-  }
-
-  .button-move2:hover .circle-text {
-    right: -160px;
-  }
-
   .circle:hover .arrow-left {
     left: -90px;
   }
@@ -1051,23 +1099,14 @@ button.circle span::after {
     margin-top: 70px;
   }
 
-  .h1-text {
-    font-size: 48px;
-  }
-
   .margintp70 {
-    margin-top: 15px;
     margin-left: 30px;
-  }
-  .circle {
-    width: 100px;
-    height: 100px;
   }
 
   .circle-text {
     font-size: 13px;
     top: 28px;
-    right: -68px;
+    right: -30px;
   }
   .cup-spoon-photo {
     left: -30%;
@@ -1130,7 +1169,6 @@ button.circle span::after {
   }
 
   .h3line-hieght {
-    line-height: 32px;
     width: 375px;
     margin-top: -10px;
     max-width: 100%;
@@ -1288,10 +1326,6 @@ button.circle span::after {
     margin-top: 80px;
   }
 
-  .margintp70 {
-    margin-top: 0px;
-  }
-
   .photoparat-blue {
     top: 0px;
     left: 0px;
@@ -1307,10 +1341,6 @@ button.circle span::after {
     top: -90px;
     height: 130%;
     width: 100%;
-  }
-
-  .margintp70 {
-    margin-top: -30px;
   }
 
   .seaction-gelery {
@@ -1403,18 +1433,6 @@ button.circle span::after {
     max-width: 100%;
   }
 
-  .circle:hover .circle-text {
-    right: -105px;
-  }
-
-  .button-move:hover .circle-text {
-    right: -125px;
-  }
-
-  .button-move2:hover .circle-text {
-    right: -120px;
-  }
-
   .circle:hover .arrow-left {
     left: -65px;
   }
@@ -1423,12 +1441,16 @@ button.circle span::after {
     right: -65px;
   }
 
-  .subj-shot-page {
-    padding-top: 40px;
+  .main {
+    padding-top: 50px;
   }
 }
 
 @media all and (max-width: 575px) {
+  .container {
+    max-width: 540px;
+  }
+
   .mobile-out-767 {
     display: none;
   }
@@ -1436,6 +1458,69 @@ button.circle span::after {
   .circle {
     width: 55px;
     height: 55px;
+    margin-top: 20px;
+  }
+
+  .wuy-wee-text {
+    margin-bottom: 0px;
+  }
+
+  .number-text {
+    font-size: 85px;
+    margin-top: -10px;
+  }
+  .we-do-simpl {
+    margin-top: 30px;
+  }
+
+  .main-text {
+    margin-top: -5px;
+  }
+
+  .we-do-right-part {
+    top: 0px;
+    margin-top: 5px;
+  }
+
+  .we-do-real-descr {
+    margin-top: 30px;
+  }
+
+  .we-do-deteil {
+    margin-top: 30px;
+  }
+
+  .we-do-deteil-photos {
+    margin-top: 20px;
+  }
+
+  .add--for-h1text {
+    margin-top: 0px;
+  }
+
+  .add--for-cont {
+    margin-top: 0px;
+  }
+
+  .section-success::after {
+    height: 101%;
+    top: 0px;
+  }
+
+  .we-do-real-photos {
+    margin-top: 15px;
+  }
+
+  .margintp70 {
+    margin-left: 0px;
+  }
+
+  .we-real-coloum-photos {
+    padding-left: 20px;
+  }
+
+  .colom-photo {
+    height: calc(100% / 2 - 10px);
   }
 
   .circle-text {
@@ -1456,7 +1541,7 @@ button.circle span::after {
   }
 
   .subject-shot-text {
-    margin-top: 0px;
+    margin-top: 40px;
     width: 100%;
   }
 
@@ -1471,17 +1556,25 @@ button.circle span::after {
 
   .subject-shot-photos {
     max-width: 100%;
+    margin-top: 20px;
   }
   .cup-spoon-photo {
-    position: relative;
+    position: static;
     max-width: 100%;
     width: 100%;
     left: 0%;
-    bottom: -60px;
+    bottom: 0px;
   }
 
   .photo-70-text {
-    max-width: 91%;
+    max-width: 100%;
+    margin-top: 20px;
+  }
+
+  .section-success::before {
+    top: 0px;
+    height: 100%;
+    margin-top: 40px;
   }
 
   .footer-img-size {
@@ -1512,17 +1605,14 @@ button.circle span::after {
     display: block;
   }
 
-  .subject-shot-text {
-    margin-top: 0px;
-  }
-
   .text-coloum {
     width: 100%;
   }
 
   .h3-text {
     margin-top: 10px;
-    text-align: center;
+    text-align: justify;
+    font-size: 15px;
   }
 
   .subj-shot-page {
@@ -1548,7 +1638,7 @@ button.circle span::after {
     top: 0;
     bottom: 0;
     width: 100%;
-    margin-top: 50px;
+    margin-top: 20px;
   }
 
   .header-nav {
@@ -1558,6 +1648,7 @@ button.circle span::after {
   .we-do-real-descr {
     flex-direction: column;
     align-items: center;
+    margin-top: 40px;
   }
 
   .we-do-simpl {
@@ -1565,8 +1656,7 @@ button.circle span::after {
   }
 
   .wuy-wee-text {
-    margin-top: 0px;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
   }
 
   .descr-text {
@@ -1575,8 +1665,9 @@ button.circle span::after {
   }
 
   .number-text {
-    font-size: 80px;
-    margin: 0px;
+    font-size: 75px;
+    margin-right: 0px;
+    margin-top: -5px;
   }
 
   .we-do-left-part {
@@ -1587,18 +1678,10 @@ button.circle span::after {
     width: 100%;
   }
 
-  .h3-text {
-    font-size: 15px;
-  }
-
   .page-one-photo1 {
     max-width: 100%;
     padding: 0px;
-    margin-top: 15px;
-  }
-
-  .we-do-real-descr {
-    margin-top: 35px;
+    margin-top: 5px;
   }
 
   .detail-photo-right {
@@ -1619,7 +1702,7 @@ button.circle span::after {
   }
 
   .we-do-real-photos {
-    margin-top: 15px;
+    margin-top: 10px;
   }
 
   .colom-photo img {
@@ -1637,6 +1720,7 @@ button.circle span::after {
     max-width: 100%;
     width: 100%;
     justify-content: unset;
+    margin-top: 5px;
   }
 
   .colom-photo-top {
@@ -1645,11 +1729,7 @@ button.circle span::after {
 
   .main-text {
     text-align: center;
-    margin-top: 10px;
-  }
-
-  .h3-text {
-    text-align: center;
+    margin-top: -5px;
   }
 
   .h1-text {
@@ -1657,6 +1737,7 @@ button.circle span::after {
   }
   .subject-shot-text {
     width: 100%;
+    margin-top: 30px;
   }
 
   .shot-success-body {
@@ -1664,9 +1745,8 @@ button.circle span::after {
   }
 
   .h3line-hieght {
-    margin-left: 0px;
     width: 100%;
-    margin-top: -5px;
+    margin-top: 15px;
   }
 
   .shot-success-text {
@@ -1678,7 +1758,7 @@ button.circle span::after {
   }
 
   .gelery-text-cont {
-    margin-top: 10px;
+    margin-top: 30px;
   }
 
   .can-see-text {
@@ -1702,19 +1782,13 @@ button.circle span::after {
   }
 
   .add--for-h1text {
-    position: absolute;
-    width: 91%;
+    position: relative;
+    width: 100%;
+    margin-top: 0px;
   }
 
-  .section-success::before {
-    width: 101%;
-  }
   .circle-mobile {
     margin-top: -35px;
-  }
-
-  .h1-text-modificator {
-    margin-top: 25px;
   }
 
   .link-footer {
@@ -1723,7 +1797,7 @@ button.circle span::after {
 
   .footer-ul {
     justify-content: space-around;
-    margin-top: 50px;
+    margin-top: 40px;
     margin-bottom: 35px;
   }
 
@@ -1736,7 +1810,7 @@ button.circle span::after {
   }
 
   .footer-img {
-    justify-content: space-around;
+    margin-bottom: 40px;
   }
 
   .footer-img-size {
@@ -1759,21 +1833,62 @@ button.circle span::after {
 
   .section-success::before {
     background-color: transparent;
+    z-index: -1;
+    width: 100%;
   }
 
   .add--for-cont {
     padding-left: 0px;
+    margin-top: 0px;
   }
 
   .photo-70-text {
     max-width: 100%;
-  }
-
-  .add--for-h1text {
-    width: 100%;
+    margin-top: 30px;
   }
 
   .gelery-photo {
     width: 100%;
+    margin-top: 20px;
+  }
+
+  .circle {
+    margin-top: 20px;
+  }
+
+  .we-do-deteil {
+    margin-top: 45px;
+  }
+
+  .margintp70 {
+    margin-left: 0px;
+  }
+
+  .h3--add {
+    margin-top: 15px;
+  }
+
+  .section-success {
+    padding-bottom: 0px;
+  }
+
+  .seaction-contact {
+    margin-top: 30px;
+  }
+
+  .form-container {
+    margin-top: 20px;
+  }
+
+  #form {
+    padding-top: 0px;
+  }
+
+  .section-success::after {
+    background-color: transparent;
+  }
+
+  .circle:hover .circle-text::after {
+    right: -70px;
   }
 }
