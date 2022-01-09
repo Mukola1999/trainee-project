@@ -166,13 +166,12 @@ button.circle span::after {
 }
 
 .margintp70 {
-  margin-top: 70px;
-  margin-left: 50px;
+  margin-top: 30px;
 }
 
 .circle {
-  width: 124px;
-  height: 124px;
+  width: 110px;
+  height: 110px;
   border-radius: 50%;
   border: 1px solid;
   border-color: #000000;
@@ -215,7 +214,7 @@ button.circle span::after {
 .circle-text {
   position: absolute;
   font-size: 24px;
-  top: 48px;
+  top: 40px;
   right: -40px;
   display: flex;
   align-items: center;
@@ -273,18 +272,18 @@ button.circle span::after {
 
 .h1-text {
   font-weight: 400;
-  font-size: 72px;
+  font-size: 70px;
   color: #030303;
 }
 
 .subject-shot-descr {
-  margin-top: 35px;
+  margin-top: 0px;
 }
 
 .h3-text {
   font-size: 24px;
   color: #030303;
-  margin-top: 35px;
+  margin-top: 20px;
   font-weight: 400;
 }
 
@@ -306,8 +305,8 @@ button.circle span::after {
 }
 
 .wuy-wee-text {
-  margin-top: 125px;
-  margin-bottom: 70px;
+  margin-top: 135px;
+  margin-bottom: 50px;
 }
 
 /* we do simpl seactionnnnnnnnnnnnnnnnnnnnnnnnnnnnn */
@@ -335,7 +334,7 @@ button.circle span::after {
   font-weight: 500;
   font-size: 36px;
   color: #000000;
-  margin-top: 15px;
+  margin-top: 25px;
 }
 
 .page-one-photo1 {
@@ -353,6 +352,7 @@ button.circle span::after {
   width: 100%;
   display: flex;
   align-items: flex-end;
+  margin-top: -50px;
 }
 
 .page-one-photo2 {
@@ -374,12 +374,12 @@ button.circle span::after {
 
 .we-do-real-descr {
   display: flex;
-  margin-top: 100px;
+  margin-top: 70px;
 }
 
 .we-do-real-photos {
   display: flex;
-  margin-top: 70px;
+  margin-top: 65px;
 }
 
 .we-real-left-part {
@@ -453,7 +453,7 @@ button.circle span::after {
 }
 
 .add--for-h1text {
-  margin-top: -60px;
+  margin-top: -70px;
 }
 
 .section-success {
@@ -533,7 +533,7 @@ button.circle span::after {
   width: 100%;
   position: absolute;
   top: -100px;
-  left: 20px;
+  left: 60px;
 }
 
 .photoparat-grey {
@@ -541,7 +541,7 @@ button.circle span::after {
   width: 100%;
   position: absolute;
   bottom: -95px;
-  left: 20px;
+  left: 60px;
 }
 
 /* seaction-geleryyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy */
@@ -552,7 +552,7 @@ button.circle span::after {
 }
 
 .gelery-text-cont {
-  margin-top: 200px;
+  margin-top: 100px;
   max-width: 65%;
   width: 100%;
 }
@@ -565,6 +565,7 @@ button.circle span::after {
 .seactions-2btn {
   display: flex;
   flex-direction: column;
+  margin-top: 30px;
 }
 
 .arrow-left {
@@ -593,26 +594,20 @@ button.circle span::after {
 
 .form-container {
   max-width: 100%;
-  width: 100%;
-  height: unset;
   background-color: rgba(70, 177, 201, 0.25);
 }
 
+#form {
+  padding: 40px;
+}
+
 #form .form-group {
-  padding-left: 50px;
-  display: flex;
-  flex-direction: column;
-  margin-top: 50px;
+  margin: 10px 0 30px;
 }
 
 .big-message {
-  margin-top: 20px;
-  padding-top: 100px;
-}
-
-#form {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  min-height: 150px;
+  outline: none;
 }
 
 #form input,
@@ -625,6 +620,11 @@ button.circle span::after {
   appearance: none;
   border-bottom: 1px solid gray;
   resize: none;
+  margin-top: 20px;
+  outline: none;
+}
+#form textarea {
+  min-height: 150px;
 }
 
 .finish-btn-mrg {
@@ -695,11 +695,17 @@ button.circle span::after {
     max-width: 1140px;
   }
 
+  .subject-shot-text {
+    width: 80%;
+  }
+
   .head-li {
     margin-left: 60px;
   }
 
   .h1-text {
+    max-width: 100%;
+    width: 100%;
     font-size: 55px;
   }
 
@@ -764,11 +770,6 @@ button.circle span::after {
 
   .gelery-text-cont {
     margin-top: 100px;
-  }
-
-  #form input,
-  #form textarea {
-    width: 90%;
   }
 
   .shot-success-body {
@@ -888,7 +889,7 @@ button.circle span::after {
   }
 
   .h1-text {
-    font-size: 46px;
+    font-size: 44px;
   }
 
   .h3-text {
@@ -938,20 +939,20 @@ button.circle span::after {
   }
 
   .photoparat-blue {
-    width: 174px;
-    top: 0px;
-    left: 78px;
+    width: 156px;
+    top: -60px;
+    left: 0px;
   }
 
   .photoparat-pink {
     width: 140px;
     top: -135px;
-    left: -30px;
+    left: 15px;
   }
 
   .photoparat-grey {
     width: 124px;
-    left: -30px;
+    left: 5px;
     bottom: -70px;
   }
 
@@ -961,11 +962,11 @@ button.circle span::after {
   }
 
   .we-do-real-descr {
-    margin-top: 45px;
+    margin-top: 20px;
   }
 
   .we-do-real-photos {
-    margin-top: 50px;
+    margin-top: 30px;
   }
 
   .we-do-deteil {
@@ -973,7 +974,7 @@ button.circle span::after {
   }
 
   .we-do-deteil-photos {
-    margin-top: 50px;
+    margin-top: 20px;
   }
 
   .seaction-gelery {
@@ -982,6 +983,7 @@ button.circle span::after {
 
   .link-footer {
     margin-right: 50px;
+    font-size: 15px;
   }
 
   .display {
@@ -998,7 +1000,7 @@ button.circle span::after {
 
   .wuy-wee-text {
     margin-top: 100px;
-    margin-bottom: 40px;
+    margin-bottom: 0px;
   }
 
   .subject-shot-descr {
@@ -1006,6 +1008,7 @@ button.circle span::after {
   }
   .main-text {
     font-weight: 400;
+    font-size: 31px;
   }
 
   .gelery-text-cont {
@@ -1048,14 +1051,8 @@ button.circle span::after {
     margin-top: 0px;
   }
 
-  .photoparat-blue {
-    width: 156px;
-    top: -50px;
-    left: -15px;
-  }
-
   .circle {
-    margin-top: 30px;
+    margin-top: 25px;
     width: 100px;
     height: 100px;
   }
@@ -1075,6 +1072,22 @@ button.circle span::after {
 
   .circle:hover .arrow-right {
     right: -90px;
+  }
+  .margin-mobile {
+    margin-top: -25px;
+  }
+
+  .section-success::after {
+    height: 130%;
+    top: -80px;
+  }
+
+  #form .form-group {
+    padding: 25px;
+  }
+
+  #form {
+    padding: 0px;
   }
 }
 
@@ -1130,6 +1143,7 @@ button.circle span::after {
   }
   .main-text {
     font-size: 25px;
+    margin-top: 0px;
   }
 
   .we-do-right-part {
@@ -1140,7 +1154,7 @@ button.circle span::after {
     display: flex;
     align-items: center;
     max-width: 100%;
-    margin-top: 15px;
+    margin-top: 35px;
     padding-right: 0px;
   }
 
@@ -1151,17 +1165,17 @@ button.circle span::after {
   }
 
   .we-do-real-photos {
-    margin-top: 35px;
+    margin-top: 15px;
   }
 
   .we-do-real-descr {
-    margin-top: 50px;
+    margin-top: 23px;
     flex-direction: column;
     text-align: center;
   }
 
   .we-do-deteil-photos {
-    margin-top: 40px;
+    margin-top: 20px;
   }
 
   .shot-success-body {
@@ -1188,14 +1202,6 @@ button.circle span::after {
     display: none;
   }
 
-  .gelery-text-cont {
-    margin-top: 70px;
-  }
-
-  .can-see-text {
-    width: 350px;
-  }
-
   .arrow-left {
     width: 60px;
   }
@@ -1205,8 +1211,8 @@ button.circle span::after {
   }
 
   .seaction-contact {
-    display: flex;
     flex-direction: column;
+    margin-top: 30px;
   }
 
   .contact-text-cont {
@@ -1229,7 +1235,7 @@ button.circle span::after {
   }
 
   .form-container {
-    margin-top: 25px;
+    margin-top: 20px;
     max-width: 100%;
     width: 90%;
   }
@@ -1264,9 +1270,13 @@ button.circle span::after {
   }
 
   .photo-70-text {
-    max-width: 95%;
+    max-width: 100%;
     text-align: start;
     margin-top: 50px;
+  }
+
+  .circle-mobile {
+    margin-top: -20px;
   }
 
   .h1-text {
@@ -1275,18 +1285,14 @@ button.circle span::after {
   }
 
   .number-text {
-    font-size: 100px;
+    font-size: 90px;
     margin-right: 0px;
   }
 
   .circle {
-    margin-top: 35px;
+    margin-top: 0px;
     width: 70px;
     height: 70px;
-  }
-
-  .wuy-wee-text {
-    margin-bottom: 35px;
   }
 
   .we-real-coloum-photos {
@@ -1294,12 +1300,7 @@ button.circle span::after {
   }
 
   .we-do-deteil {
-    margin-top: 50px;
-  }
-
-  #form input,
-  #form textarea {
-    width: 100%;
+    margin-top: 10px;
   }
 
   .link {
@@ -1323,7 +1324,7 @@ button.circle span::after {
   }
 
   .subject-shot-text {
-    margin-top: 80px;
+    margin-top: 50px;
   }
 
   .photoparat-blue {
@@ -1338,9 +1339,7 @@ button.circle span::after {
   }
 
   .section-success::before {
-    top: -90px;
-    height: 130%;
-    width: 100%;
+    display: none;
   }
 
   .seaction-gelery {
@@ -1350,7 +1349,7 @@ button.circle span::after {
   }
 
   .gelery-text-cont {
-    margin-top: 55px;
+    margin-top: 25px;
     max-width: 100%;
     width: 100%;
   }
@@ -1370,7 +1369,11 @@ button.circle span::after {
   .gelery-photo {
     width: 60%;
     margin: 0 auto;
-    margin-top: 45px;
+    margin-top: 20px;
+  }
+
+  .seactions-2btn {
+    margin-top: 30px;
   }
 
   .descr-text {
@@ -1380,7 +1383,7 @@ button.circle span::after {
   }
 
   .wuy-wee-text {
-    margin-top: 0px;
+    margin-top: -20px;
   }
 
   .mobile-out {
@@ -1388,6 +1391,7 @@ button.circle span::after {
   }
   .mobile-in {
     display: flex;
+    margin-top: 0px;
   }
 
   .we-do--desc1 {
@@ -1411,13 +1415,12 @@ button.circle span::after {
     margin-top: 30px;
   }
 
-  #form input,
-  #form textarea {
-    width: 90%;
+  .add--for-cont {
+    margin-top: 130px;
   }
 
-  .add--for-cont {
-    margin-top: 155px;
+  .section-success::after {
+    display: none;
   }
 
   .section-success {
@@ -1444,11 +1447,27 @@ button.circle span::after {
   .main {
     padding-top: 50px;
   }
+
+  .subj-shot-page {
+    padding-top: 25px;
+  }
+
+  .we-do-simpl {
+    margin-top: 85px;
+  }
+
+  .media-425 {
+    margin-top: 8px;
+  }
 }
 
 @media all and (max-width: 575px) {
   .container {
     max-width: 540px;
+  }
+
+  .subj-shot-page {
+    padding-top: 0px;
   }
 
   .mobile-out-767 {
@@ -1466,11 +1485,12 @@ button.circle span::after {
   }
 
   .number-text {
-    font-size: 85px;
+    font-size: 80px;
     margin-top: -10px;
   }
+
   .we-do-simpl {
-    margin-top: 30px;
+    margin-top: 50px;
   }
 
   .main-text {
@@ -1541,7 +1561,7 @@ button.circle span::after {
   }
 
   .subject-shot-text {
-    margin-top: 40px;
+    margin-top: 30px;
     width: 100%;
   }
 
@@ -1568,7 +1588,11 @@ button.circle span::after {
 
   .photo-70-text {
     max-width: 100%;
-    margin-top: 20px;
+    margin-top: 30px;
+  }
+
+  .section-success {
+    padding-bottom: 0px;
   }
 
   .section-success::before {
@@ -1581,6 +1605,35 @@ button.circle span::after {
     height: auto;
     max-width: 24px;
     width: 100%;
+  }
+
+  .page-one-photo1 {
+    margin-top: 15px;
+  }
+
+  .descr-text {
+    margin-top: 20px;
+  }
+
+  .gelery-text-cont {
+    margin-top: 35px;
+  }
+
+  .can-see-text {
+    margin-top: 10px;
+  }
+
+  .seactions-2btn {
+    margin-top: 0px;
+  }
+
+  .two-circles {
+    padding: 0px;
+    padding-left: 5px;
+  }
+
+  .seaction-contact {
+    margin-top: 40px;
   }
 }
 
@@ -1638,7 +1691,7 @@ button.circle span::after {
     top: 0;
     bottom: 0;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 0px;
   }
 
   .header-nav {
@@ -1648,7 +1701,7 @@ button.circle span::after {
   .we-do-real-descr {
     flex-direction: column;
     align-items: center;
-    margin-top: 40px;
+    margin-top: 25px;
   }
 
   .we-do-simpl {
@@ -1656,7 +1709,7 @@ button.circle span::after {
   }
 
   .wuy-wee-text {
-    margin-bottom: 0px;
+    margin-top: 0px;
   }
 
   .descr-text {
@@ -1681,7 +1734,7 @@ button.circle span::after {
   .page-one-photo1 {
     max-width: 100%;
     padding: 0px;
-    margin-top: 5px;
+    margin-top: 15px;
   }
 
   .detail-photo-right {
@@ -1746,7 +1799,11 @@ button.circle span::after {
 
   .h3line-hieght {
     width: 100%;
-    margin-top: 15px;
+    margin-top: 10px;
+  }
+
+  .contact-h3-text {
+    margin-top: 5px;
   }
 
   .shot-success-text {
@@ -1778,7 +1835,7 @@ button.circle span::after {
   }
 
   .media-425 {
-    margin-top: -60px;
+    margin-top: -30px;
   }
 
   .add--for-h1text {
@@ -1877,7 +1934,7 @@ button.circle span::after {
   }
 
   .form-container {
-    margin-top: 20px;
+    margin-top: 15px;
   }
 
   #form {
@@ -1890,5 +1947,12 @@ button.circle span::after {
 
   .circle:hover .circle-text::after {
     right: -70px;
+  }
+
+  #form .form-group {
+    padding: 15px;
+  }
+  #form .form-group {
+    margin: 0px;
   }
 }
